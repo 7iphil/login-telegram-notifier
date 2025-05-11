@@ -52,6 +52,7 @@ function ltgntf_render_settings_page() {
     ?>
     <div class="wrap">
         <h1><?php esc_html_e( 'Login Telegram Notifier Settings', 'login-telegram-notifier' ); ?></h1>
+        <?php settings_errors(); ?>
         <form method="post" action="options.php" autocomplete="off">
             <?php
             settings_fields( 'ltgntf_settings_group' );
