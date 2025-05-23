@@ -1,76 +1,104 @@
-
 === Login Telegram Notifier ===
-Contributors: philstudio
-Tags: telegram, login alert, security, admin monitor, notification
-Requires at least: 5.3
-Tested up to: 6.8
-Requires PHP: 7.2
-Stable tag: 1.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Donate link: https://yoomoney.ru/to/4100141266469
+Contributors: philstudio  
+Tags: telegram, login, alert, security, monitor
+Requires at least: 5.3  
+Tested up to: 6.8  
+Requires PHP: 7.2  
+Stable tag: 1.0  
+License: GPLv2 or later  
+License URI: https://www.gnu.org/licenses/gpl-2.0.html  
+Donate link: https://yoomoney.ru/to/4100141266469  
 
-Sends Telegram alerts on WordPress admin login with IP, location, browser info. Secure, lightweight and Core-compliant.
+This plugin sends real-time Telegram alerts when someone logs into the WordPress admin panel. Includes IP, location, user agent and more.
 
 == Description ==
 
-Login Telegram Notifier keeps you informed every time someone logs into your WordPress admin area. It sends a detailed login alert to your Telegram bot, including:
+Login Telegram Notifier sends you instant login notifications via Telegram every time someone signs into your WordPress admin area.
 
+The alert includes:
 
-* 🔗 URL
+* 🔗 Login URL
 * 🌍 IP address
-* 👤 Username
 * 🧭 Geo location (via ip-api.com)
-* ℹ️ Info about Browser and OS
+* 👤 Username
+* ℹ️ Browser and OS information
 * ⏰ Login timestamp
 
-
-This is useful for monitoring suspicious logins, team access, staging environment entries or simply for peace of mind.
+This plugin helps site owners monitor unauthorized access, multi-user logins or staging/admin activity.
 
 == Installation ==
 
-= USING WORDPRESS PLUGIN INSTALLER =
+= Using the WordPress Plugin Installer =
 
-1. Go to your WordPress Dashboard → Plugins → Add New.
-2. Search for 'Login Telegram Notifier'.
-3. Click 'Install' and then 'Activate'.
-4. Done!
+1. Go to WordPress Dashboard → Plugins → Add New.
+2. Search for "Login Telegram Notifier".
+3. Click "Install" then "Activate".
+4. Go to Settings → Login Telegram Notifier and enter your Telegram Bot Token and Chat ID.
 
-= MANUAL INSTALLATION =
+= Manual Installation =
 
-1. Download the 'login-telegram-notifier' zip file.
-2. Extract the content and copy it to the `/wp-content/plugins/` directory of your WordPress installation.
-3. Go to Dashboard → Plugins → Installed Plugins.
-4. Find 'Login Telegram Notifier' and click 'Activate'.
-5. Go to Settings → Login Telegram Notifier to configure.
+1. Download the plugin zip file.
+2. Unzip and upload to `/wp-content/plugins/login-telegram-notifier`.
+3. Activate via Dashboard → Plugins.
+4. Configure in Settings → Login Telegram Notifier.
 
 == Features ==
-* 🔐 Sends login alerts via Telegram when anyone logs into WordPress
-* 🌍 Includes IP address, location, user agent and timestamp
-* ⚙️ Configurable Telegram bot token and chat ID
-* 🚀 Uses WordPress Core standards (no curl, no file_get_contents)
-* 🧼 Secure and GDPR-respecting (no logging of passwords or personal data)
-* 🧠 Built for developers and sysadmins who want simple visibility
+
+* 🔔 Telegram notifications on every login
+* 🌍 IP, geo location, browser and OS info
+* 🔐 Works with Telegram bots securely
+* 🧼 GDPR-friendly — no sensitive data stored
+* 💡 Simple setup, no coding required
 
 == Frequently Asked Questions ==
 
-= How do I get a Telegram Bot Token and Chat ID? =
+= How do I get my Telegram Bot Token? =
 
-1. Search for @BotFather in Telegram and create a new bot to get your Bot Token.
-2. Add your bot to a private/group chat and send a message.
-3. Use tools like @userinfobot or web-based APIs to get the Chat ID (starts with `-` for groups).
+Use [@BotFather](https://t.me/BotFather) in Telegram to create a bot and get your token.
 
-= The plugin is active, but I don’t get notifications =
+= How do I find my Chat ID? =
 
-1. Check the "Enable Login Notifications" checkbox in Settings → Login Telegram Notifier.
-2. Verify your bot token and chat ID are correct and active.
-3. Make sure the bot is not blocked in your Telegram group or chat.
-4. Try logging in with another browser or device to test it.
+Send a message to the bot, then use the [getUpdates API](https://api.telegram.org/bot<your-token>/getUpdates) to retrieve your chat ID.
+
+= I'm not receiving alerts. Why? =
+
+1. Check that notifications are enabled in plugin settings.
+2. Make sure your bot is not blocked in the group or chat.
+3. Ensure your token and chat ID are valid.
+4. Try logging in from another browser to test.
+
+== External services ==
+
+This plugin connects to the following external services:
+
+=== Telegram Bot API ===  
+Used to send login alert messages to your Telegram bot/chat.  
+🔗 [Telegram API Docs](https://core.telegram.org/bots/api)  
+📜 [Telegram Privacy Policy](https://telegram.org/privacy)
+
+Data sent: Chat ID, bot token (from your settings), and message with IP/location/user agent info.  
+Data is only sent when someone logs in and notifications are enabled.
+All data is not stored locally exclude Chat ID, bot token from your settings.
+
+=== IP-API.com ===  
+Used to retrieve geolocation data (city, country) from the IP address.  
+🔗 [https://ip-api.com](http://ip-api.com)  
+📜 [Privacy Policy](https://ip-api.com/docs/legal)
+
+Data sent: visitor’s IP address.  
+Data is used to enhance notification detail and is not stored locally.
 
 == Screenshots ==
 
-1. Login Telegram Notifier settings page (Settings > Login Telegram Notifier)
+1. Settings page showing Bot Token and Chat ID configuration.
 
 == Changelog ==
+
 = 1.0 =
 * Initial release
+
+== Upgrade Notice ==
+
+= 1.1 =
+* [Fixed] Fix readme.txt file
+* [Added] Added External services Info
