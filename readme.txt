@@ -4,7 +4,7 @@ Tags: telegram, login, alert, security, monitor
 Requires at least: 5.3  
 Tested up to: 6.8  
 Requires PHP: 7.2  
-Stable tag: 1.0  
+Stable tag: 1.1 
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 Donate link: https://yoomoney.ru/to/4100141266469  
