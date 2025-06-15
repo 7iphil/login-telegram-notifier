@@ -67,7 +67,7 @@ Use [@BotFather](https://t.me/BotFather) in Telegram to create a bot and get you
 
 = How do I find my Chat ID? =
 
-Send a message to the bot, then use the [getUpdates API](https://api.telegram.org/bot<your-token>/getUpdates) to retrieve your chat ID.
+Send a message to the bot, then use the [getUpdates API](https://api.telegram.org/bot**your-token**/getUpdates) to retrieve your chat ID.
 
 = I'm not receiving alerts. Why? =
 
@@ -99,7 +99,7 @@ Data is used to enhance notification detail and is not stored locally.
 
 == Screenshots ==
 
-1. Search for @BotFather in Telegram | Create new bot in @BotFather | Find and copy your chat ID here: https://api.telegram.org/bot<your_token>/getUpdates
+1. Search for @BotFather in Telegram | Create new bot in @BotFather | Find and copy your chat ID here: https://api.telegram.org/bot**your_token**/getUpdates
 2. Paste bot token and chat ID into plugin settings: Tools > Login Telegram Notifier.
 
 == Changelog ==
