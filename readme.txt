@@ -111,7 +111,5 @@ Data is used to enhance notification detail and is not stored locally.
 * [Fixed] Fix readme.txt file
 * [Added] Added External services Info
 
-== Upgrade Notice ==
-
 = 1.2 =
 * [Added] Added screenshot and step-by-step guide on how to create a Telegram bot, obtain a token, and find your chat ID.
