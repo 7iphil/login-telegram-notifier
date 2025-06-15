@@ -2,8 +2,8 @@
 Contributors: philstudio  
 Tags: telegram, login, alert, security, monitor
 Requires at least: 5.3  
-Tested up to: 6.8  
-Requires PHP: 7.2  
+Tested up to: 6.8.1  
+Requires PHP: 7.2
 Stable tag: 1.2 
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
@@ -113,3 +113,4 @@ Data is used to enhance notification detail and is not stored locally.
 
 = 1.2 =
 * [Added] Added screenshot and step-by-step guide on how to create a Telegram bot, obtain a token, and find your chat ID.
+* [Added] Tested up to: 6.8.1
