@@ -4,7 +4,7 @@ Tags: telegram, login, alert, security, monitor
 Requires at least: 5.3  
 Tested up to: 6.8  
 Requires PHP: 7.2  
-Stable tag: 1.1 
+Stable tag: 1.1.1 
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 Donate link: https://yoomoney.ru/to/4100141266469  
@@ -40,7 +40,16 @@ This plugin helps site owners monitor unauthorized access, multi-user logins or 
 1. Download the plugin zip file.
 2. Unzip and upload to `/wp-content/plugins/login-telegram-notifier`.
 3. Activate via Dashboard → Plugins.
-4. Configure in Settings → Login Telegram Notifier.
+4. Configure in Tools → Login Telegram Notifier.
+
+= СREATE A TELEGRAM BOT =
+
+1. Open Telegram and search for the user **@BotFather**.
+2. Type `/start` and follow instructions to create a new bot.
+3. Choose a name and a username for your bot.
+4. After creation, **BotFather** will send you a token (example: 123456789:ABCdefGHIjkLmnoPQRstuVWxyZ).
+5. Find and copy your chat ID here: https://api.telegram.org/bot<your_token>/getUpdates.
+6. Paste **bot token** and **chat ID** into plugin settings: **Tools > Login Telegram Notifier**.
 
 == Features ==
 
@@ -90,15 +99,19 @@ Data is used to enhance notification detail and is not stored locally.
 
 == Screenshots ==
 
-1. Settings page showing Bot Token and Chat ID configuration.
+1. Search for @BotFather in Telegram | Create new bot in @BotFather | Find and copy your chat ID here: https://api.telegram.org/bot<your_token>/getUpdates
+2. Paste bot token and chat ID into plugin settings: Tools > Login Telegram Notifier.
 
 == Changelog ==
 
 = 1.0 =
 * Initial release
 
-== Upgrade Notice ==
-
 = 1.1 =
 * [Fixed] Fix readme.txt file
 * [Added] Added External services Info
+
+== Upgrade Notice ==
+
+= 1.1.1 =
+* [Added] Added screenshot and step-by-step guide on how to create a Telegram bot, obtain a token, and find your chat ID.
