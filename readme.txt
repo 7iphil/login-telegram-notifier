@@ -4,7 +4,7 @@ Tags: telegram, login, alert, security, monitor
 Requires at least: 5.3  
 Tested up to: 6.8  
 Requires PHP: 7.2  
-Stable tag: 1.1.1 
+Stable tag: 1.2 
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 Donate link: https://yoomoney.ru/to/4100141266469  
@@ -48,7 +48,7 @@ This plugin helps site owners monitor unauthorized access, multi-user logins or 
 2. Type `/start` and follow instructions to create a new bot.
 3. Choose a name and a username for your bot.
 4. After creation, **BotFather** will send you a token (example: 123456789:ABCdefGHIjkLmnoPQRstuVWxyZ).
-5. Find and copy your chat ID here: https://api.telegram.org/bot<your_token>/getUpdates.
+5. Find and copy your chat ID here: https://api.telegram.org/bot`your_token`/getUpdates.
 6. Paste **bot token** and **chat ID** into plugin settings: **Tools > Login Telegram Notifier**.
 
 == Features ==
@@ -67,7 +67,7 @@ Use [@BotFather](https://t.me/BotFather) in Telegram to create a bot and get you
 
 = How do I find my Chat ID? =
 
-Send a message to the bot, then use the [getUpdates API](https://api.telegram.org/bot**your-token**/getUpdates) to retrieve your chat ID.
+Send a message to the bot, then use the [getUpdates API](https://api.telegram.org/bot`your_token`/getUpdates) to retrieve your chat ID.
 
 = I'm not receiving alerts. Why? =
 
@@ -99,7 +99,7 @@ Data is used to enhance notification detail and is not stored locally.
 
 == Screenshots ==
 
-1. Search for @BotFather in Telegram | Create new bot in @BotFather | Find and copy your chat ID here: https://api.telegram.org/bot**your_token**/getUpdates
+1. Search for @BotFather in Telegram | Create new bot in @BotFather | Find and copy your chat ID here: https://api.telegram.org/bot`your_token`/getUpdates
 2. Paste bot token and chat ID into plugin settings: Tools > Login Telegram Notifier.
 
 == Changelog ==
@@ -113,5 +113,5 @@ Data is used to enhance notification detail and is not stored locally.
 
 == Upgrade Notice ==
 
-= 1.1.1 =
+= 1.2 =
 * [Added] Added screenshot and step-by-step guide on how to create a Telegram bot, obtain a token, and find your chat ID.
