@@ -3,11 +3,11 @@
  * Plugin Name:         Login Telegram Notifier
  * Plugin URI:          https://iphil.top/portfolio/login-telegram-notifier/
  * Description:         Sends admin login notifications to Telegram with IP, location and browser info.
- * Version:             1.2.1
+ * Version:             1.3
  * Author:              iPhil
  * Author URI:          https://iphil.top
  * Requires at least:   5.3
- * Tested up to:        6.8.1
+ * Tested up to:        6.9.1
  * License:             GPLv2 or later
  * Uninstall:           true
  * Text Domain:         login-telegram-notifier
